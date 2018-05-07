@@ -1,0 +1,86 @@
+@import "bourbon/bourbon"
+@import "sass/_blocks"
+
+/*Компоненты*/
+
+.h-nav
+	font-size: 0
+	display: inline-block
+	&__link
+		font-size: 16px
+		color: #fff
+		line-height: 33px
+		text-decoration: none
+	&__item
+		display: inline-block
+		margin: 0 21px
+		position: relative
+		&:hover
+			.h-nav__link
+				color: #ef4837
+	&__sub
+		z-index: 1
+		height: 50px
+		border-radius: 22px
+		background-color: #e21e24
+		padding: 14px 34px
+		position: absolute
+		left: 50%
+		width: auto
+		&::after
+			content: ''
+			border: 5px solid transparent
+			border-bottom: 5px solid #e21e24
+			display: block
+			position: absolute
+			left: 47px
+			top: -10px
+		&-wp
+			position: absolute
+			top: 100%
+			left: 50%
+			transform: translateX(-50%)
+			-webkit-transform: translateX(-50%)
+			margin-left: -80%
+			height: 50px
+			display: none
+	&__subitem
+		display: inline-block
+		padding: 0 10px
+	&__sublink
+		font-size: 16px
+		color: #fff
+		text-decoration: none
+		line-height: 18px
+		border-bottom: 1px solid transparent
+		display: block
+		&:hover
+			border-bottom: 1px solid #fff
+
+.h-title
+	width: 1335px
+	margin: 35px auto 0
+	h1
+		font-family: "NotoSerifBoldItalic", sans-serif
+		font-size: 60px
+		color: #fff
+		display: block
+	h2
+		font-family: "NotoSerifRegular", sans-serif
+		font-size: 36px
+		color: #fff
+
+.h-unesco
+	display: inline-block
+	padding-top: 30px
+	img
+		display: block
+
+.h-flags
+	display: inline-block
+	font-size: 0
+	&__item
+		display: inline-block
+		margin: 0 12px
+	&__img
+		display: block

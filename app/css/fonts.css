@@ -1,0 +1,83 @@
+/* font-family: "NotoSerifRegular" */
+@font-face {
+  font-family: "NotoSerifRegular";
+  src: url("../fonts/NOTO-SERIF_[ALLFONT.RU].TTF");
+}
+
+/* font-family: "NotoSerifBold" */
+@font-face {
+  font-family: "NotoSerifBold";
+  src: url("../fonts/NOTOSERIF-BOLD.TTF");
+}
+
+/* font-family: "NotoSerifItalic" */
+@font-face {
+  font-family: "NotoSerifItalic";
+  src: url("../fonts/NOTOSERIF-ITALIC.TTF");
+}
+
+/* font-family: "NotoSerifBoldItalic" */
+@font-face {
+  font-family: "NotoSerifBoldItalic";
+  src: url("../fonts/NOTOSERIF-BOLDITALIC.TTF");
+}
+
+/* font-family: "OpenSansRegular" */
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OPEN-SANS_[ALLFONT.RU].TTF");
+}
+
+/* font-family: "OpenSansBold" */
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/OPENSANS-BOLD.TTF");
+}
+
+/* font-family: "OpenSansBoldItalic" */
+@font-face {
+  font-family: "OpenSansBoldItalic";
+  src: url("../fonts/OPENSANS-BOLDITALIC.TTF");
+}
+
+/* font-family: "OpenSansExtraBold" */
+@font-face {
+  font-family: "OpenSansExtraBold";
+  src: url("../fonts/OPENSANS-EXTRABOLD.TTF");
+}
+
+/* font-family: "OpenSansExtraBoldItalic" */
+@font-face {
+  font-family: "OpenSansExtraBoldItalic";
+  src: url("../fonts/OPENSANS-EXTRABOLDITALIC.TTF");
+}
+
+/* font-family: "OpenSansItalic" */
+@font-face {
+  font-family: "OpenSansItalic";
+  src: url("../fonts/OPENSANS-ITALIC.TTF");
+}
+
+/* font-family: "OpenSansLight" */
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/OPENSANS-LIGHT.TTF");
+}
+
+/* font-family: "OpenSansLightItalic" */
+@font-face {
+  font-family: "OpenSansLightItalic";
+  src: url("../fonts/OPENSANS-LIGHTITALIC.TTF");
+}
+
+/* font-family: "OpenSansSemiBold" */
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../fonts/OPENSANS-SEMIBOLD.TTF");
+}
+
+/* font-family: "OpenSansSemiBoldItalic" */
+@font-face {
+  font-family: "OpenSansSemiBoldItalic";
+  src: url("../fonts/OPENSANS-SEMIBOLDITALIC.TTF");
+}

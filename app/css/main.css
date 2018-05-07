@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/*Сброс*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small,
+strike, strong, sub, sup, tt, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, nav, output, ruby, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button, button:active, button:focus,
+input, input:active, input:focus {
+  outline: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.owl-dots-custom {
+  font-size: 0;
+  padding-top: 24px;
+}
+
+.owl-dots-custom .owl-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.owl-dots-custom .active {
+  background-color: #e21e24;
+}
+
+/*Внешние блоки*/
+body {
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.25;
+  font-family: "OpenSansRegular", sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  position: relative;
+}
+
+.header-slider {
+  position: relative;
+}
+
+.header-slider .owl-nav {
+  display: none;
+}
+
+.header-slider__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-slider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.header__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.header__h-nav {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 23px;
+  padding-top: 33px;
+}
+
+.header__btn {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  height: 50px;
+  line-height: 46px;
+  border: 2px solid #fff;
+  border-radius: 22px;
+  padding: 0 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  top: 20px;
+}
+
+.header__btn-help {
+  left: 30px;
+}
+
+.header__btn-lang {
+  right: 30px;
+  width: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 14px;
+  font-family: "OpenSansBold", sans-serif;
+}
+
+.header__h-center {
+  text-align: center;
+  padding-top: 84px;
+}
+
+.header__h-flags {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 33px;
+}
+
+/*Компоненты*/
+.h-nav {
+  font-size: 0;
+  display: inline-block;
+}
+
+.h-nav__link {
+  font-size: 16px;
+  color: #fff;
+  line-height: 33px;
+  text-decoration: none;
+}
+
+.h-nav__item {
+  display: inline-block;
+  margin: 0 21px;
+  position: relative;
+}
+
+.h-nav__item:hover .h-nav__link {
+  color: #ef4837;
+}
+
+.h-nav__sub {
+  z-index: 1;
+  height: 50px;
+  border-radius: 22px;
+  background-color: #e21e24;
+  padding: 14px 34px;
+  position: absolute;
+  left: 50%;
+  width: auto;
+}
+
+.h-nav__sub::after {
+  content: '';
+  border: 5px solid transparent;
+  border-bottom: 5px solid #e21e24;
+  display: block;
+  position: absolute;
+  left: 47px;
+  top: -10px;
+}
+
+.h-nav__sub-wp {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  margin-left: -80%;
+  height: 50px;
+  display: none;
+}
+
+.h-nav__subitem {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.h-nav__sublink {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 18px;
+  border-bottom: 1px solid transparent;
+  display: block;
+}
+
+.h-nav__sublink:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.h-title {
+  width: 1335px;
+  margin: 35px auto 0;
+}
+
+.h-title h1 {
+  font-family: "NotoSerifBoldItalic", sans-serif;
+  font-size: 60px;
+  color: #fff;
+  display: block;
+}
+
+.h-title h2 {
+  font-family: "NotoSerifRegular", sans-serif;
+  font-size: 36px;
+  color: #fff;
+}
+
+.h-unesco {
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.h-unesco img {
+  display: block;
+}
+
+.h-flags {
+  display: inline-block;
+  font-size: 0;
+}
+
+.h-flags__item {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.h-flags__img {
+  display: block;
+}
