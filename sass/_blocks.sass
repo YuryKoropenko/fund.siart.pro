@@ -104,10 +104,46 @@ body
 		padding-bottom: 33px
 
 .page
+	&__gradient
+		background: -moz-linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%)
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(235,235,235,1)))
+		background: -webkit-linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%)
+		background: -o-linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%)
+		background: -ms-linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%)
+		background: linear-gradient(0deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 )
+		padding-bottom: 86px
 	&__section
 		&-first
 			width: 1170px
 			margin: 0 auto
+		&-second
+			width: 1560px
+			margin: 109px auto 0
+		&-third
+			padding-top: 50px
+			background-color: #e71e24
+			padding-bottom: 60px
+		&-help
+			width: 1170px
+			margin: 0 auto
+		&-glavfond
+			color: #fff
+			padding-bottom: 72px
+		&-gray
+			background-color: #f0f0f0
+		&-wp
+			width: 1425px
+			margin: 0 auto
+			padding: 0 0
+		&-white
+			width: 1170px
+			margin: 20px auto 58px
+		&-map
+			img
+				display: block
+				width: 100%
+				height: auto
 	&__p-img
 		display: block
 		padding-left: 20px
@@ -123,3 +159,39 @@ body
 		-webkit-flex-wrap: wrap
 		-ms-flex-wrap: wrap
 		flex-wrap: wrap
+	&__p-aboutfond
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-ms-flex-pack: start
+		-webkit-align-content: flex-start
+		-ms-flex-line-pack: start
+		align-content: flex-start
+		-webkit-align-items: flex-start
+		-ms-flex-align: start
+		align-items: flex-start
+	&__p-title
+		text-align: center
+		padding: 46px 0
+	&__p-ruk
+		padding-bottom: 60px
+	&__p-subtitle
+		padding: 38px 0 28px
+		text-align: left
+		position: relative
+		width: 100%
+
+.footer
+	background-color: #464646
+	padding: 70px 0 116px
+	&__wrapper
+		width: 1200px
+		margin: 0 auto
+	&__f-nav
+		@include clearfix

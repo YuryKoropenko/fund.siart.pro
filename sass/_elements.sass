@@ -56,6 +56,19 @@
 		display: block
 		&:hover
 			border-bottom: 1px solid #fff
+	&__button
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		display: block
+		position: absolute
+		left: 40px
+		top: 20px
+		background-image: url(../img/icons/5.png)
+		background-repeat: no-repeat
+		background-position: left center
+		&:hover
+			background-position: right center
 
 .h-title
 	width: 1335px
@@ -147,7 +160,6 @@
 			color: #010101
 			font-size: 14px
 			display: block
-			
 		&-first
 			width: 165px
 			text-align: right
@@ -182,3 +194,504 @@
 		width: 37%
 	&__right
 		width: 37%
+
+.p-aboutfond
+	background-color: #fff
+	position: relative
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2)
+	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2)
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2)
+	blockquote
+		position: relative
+		padding-top: 40px
+		color: #878787
+		font-size: 14px
+		line-height: 24px
+		font-family: "NotoSerifItalic", sans-serif
+		&::after
+			content: '“'
+			font-family: "NotoSerifBoldItalic", sans-serif
+			font-size: 32px
+			position: absolute
+			left: 0
+			top: 0px
+	i
+		font-size: 14px
+		color: #000
+		line-height: 24px
+		font-family: "OpenSansItalic", sans-serif
+	&__img
+		img
+			display: block
+	&__row
+		@include clearfix
+		padding-top: 45px
+	&__left
+		width: 50%
+		float: left
+		h2
+			font-family: "NotoSerifBoldItalic", sans-serif
+			font-size: 24px
+			color: #010101
+		h3
+			font-family: "NotoSerifItalic", sans-serif
+			font-size: 14px
+			color: #010101
+	&__right
+		width: 50%
+		float: right
+		text-align: right
+		img
+			max-width: 100%
+			display: inline-block
+	&-1
+		padding-left: 45px
+		padding-right: 35px
+		padding-top: 56px
+		padding-bottom: 65px
+		width: 360px
+		margin-top: 190px
+		.p-aboutfond__img
+			position: absolute
+			left: 0
+			top: -193px
+			display: block
+	&-2
+		width: 653px
+		padding-left: 98px
+		padding-bottom: 40px
+		padding-top: 35px
+		padding-right: 98px
+		.p-aboutfond__img
+			position: absolute
+			left: -97px
+			top: -60px
+			display: block
+	&-3
+		width: 458px
+		margin-top: 70px
+		padding-left: 68px
+		padding-right: 67px
+		padding-bottom: 38px
+		.p-aboutfond__img
+			position: absolute
+			left: 0
+			top: -70px
+		.p-aboutfond__row
+			padding-left: 128px
+			padding-bottom: 85px
+			padding-top: 58px
+		.p-aboutfond__left
+			width: 100%
+		blockquote
+			padding-top: 0
+			&::after
+				top: 5px
+				left: -34px
+
+.p-helpfond
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	&__left
+		width: 263px
+		h2
+			font-size: 30px
+			font-family: "NotoSerifBoldItalic", sans-serif
+			color: #fff
+			display: block
+			padding-bottom: 20px
+		p
+			line-height: 24px
+			color: #fff
+	&__right
+		width: 847px
+	&__block
+		background-color: #fff
+		padding-left: 67px
+		padding-right: 67px
+		padding-top: 22px
+		border-radius: 6px
+		position: relative
+		padding-bottom: 61px
+		p
+			font-size: 17px
+			color: #000
+			display: block
+			padding-bottom: 13px
+		strong
+			font-family: "OpenSansBold", sans-serif
+			font-size: 17px
+	&__row
+		justify-content: left
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		border: 1px solid #cccccc
+		border-radius: 1px
+		background-color: #f0f0f0
+		-webkit-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		margin-right: 158px
+		position: relative
+		margin-bottom: 20px
+	&__item
+		label
+			line-height: 48px
+			display: block
+			text-align: center
+			font-size: 17px
+			color: #878787
+			font-family: "Roboto Bold", sans-serif
+			border-right: 1px solid #cccccc
+			width: 97px
+			cursor: pointer
+			position: relative
+			&:hover
+				&:after
+					content: ''
+					display: block
+					background-color: transparent
+					left: 0
+					right: 0
+					top: 0
+					bottom: 0
+					border: 1px solid #fecc00
+					position: absolute
+		input[type="radio"]
+			display: none
+			&:checked + label
+				background-color: #fecc00
+		&:nth-child(1)
+			label
+				width: 82px
+		&:nth-child(5)
+			input
+				width: 180px
+				border: none
+				background-color: transparent
+				height: 48px
+				padding-left: 32px
+				padding-right: 19px
+				font-family: "OpenSansItalic", sans-serif
+				font-size: 17px
+				cursor: pointer
+				border: 1px solid #f0f0f0
+				position: relative
+				&:focus
+					background-color: #fecc00
+					border: 1px solid #fecc00
+				&:hover
+					border: 1px solid #fecc00
+	&__btn
+		width: 150px
+		display: block
+		position: absolute
+		top: 0
+		right: -158px
+		height: 50px
+		line-height: 48px
+		background-color: #fecc00
+		border: 1px solid #fecc00
+		border-radius: 21px
+		color: #000
+		font-size: 16px
+		font-family: "OpenSansBold", sans-serif
+		text-transform: uppercase
+		&:hover
+			background-color: #e71e24
+			border-color: #e71e24
+			color: #fff
+	&__bottom
+		position: absolute
+		border-top: 1px solid #cccccc
+		left: 0
+		bottom: 0
+		right: 0
+		padding-left: 67px
+		padding-right: 67px
+		padding-top: 22px
+		padding-bottom: 19px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+	&__operators
+		font-size: 0
+		li
+			display: inline-block
+			height: 19px
+			margin-right: 30px
+		img
+			display: block
+			max-height: 100%
+	&__garant
+		a
+			display: inline-block
+			padding-right: 32px
+			color: #acacac
+			font-family: "NotoSerifItalic", sans-serif
+			text-decoration: none
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				right: 0
+				top: 50%
+				width: 21px
+				height: 9px
+				background-image: url(../img/icons/3.png)
+				background-repeat: no-repeat
+				background-position: left center
+				margin-top: -4.5px
+			&:hover
+				color: #e71e24
+				&::after
+					content: ''
+					background-position: right center
+
+.p-title
+	color: #010101
+	font-size: 28px
+	font-family: "NotoSerifBoldItalic", sans-serif
+
+.p-glavfondslider
+	&__item
+		position: relative
+		padding-left: 45%
+		margin: 0 15px
+	&__img
+		width: 45%
+		position: absolute
+		left: 0
+		top: 0
+		padding-right: 30px
+		img
+			display: block
+			width: 100%
+			height: auto
+	&__description
+		h2
+			font-family: "NotoSerifBoldItalic", sans-serif
+			line-height: 20px
+			display: block
+			font-size: 18px
+			color: #010101
+		h3
+			font-family: "NotoSerifItalic", sans-serif
+			line-height: 20px
+			display: block
+			font-size: 14px
+			color: #010101
+		p
+			font-size: 14px
+			color: #878787
+			line-height: 20px
+			display: block
+			padding-top: 20px
+	.owl-nav
+		button
+			text-indent: -9999px
+			width: 40px
+			height: 40px
+			display: block
+			position: absolute
+			top: 0
+			background-image: url(../img/icons/4.png) !important
+			z-index: 2
+			top: -90px
+		.owl-prev
+			background-position: left top !important
+			left: 98px
+			&:hover
+				background-position: left bottom !important
+		.owl-next
+			background-position: right top !important
+			right: 98px
+			&:hover
+				background-position: right bottom !important
+	.owl-nav.disabled
+		display: block !important
+
+.p-ruk
+	@include clearfix
+	&__left
+		width: 50%
+		float: left
+		padding-left: 127px
+		padding-right: 115px
+		padding-top: 127px
+		p
+			color: #000
+			font-size: 14px
+			line-height: 24px
+	&__right
+		width: 50%
+		float: right
+		.page__p-title
+			padding-left: 15px
+	&__item
+		padding: 0 15px
+	&__img
+		img
+			display: block
+			width: 100%
+	&__bottom
+		text-align: right
+		padding-top: 20px
+		h2
+			font-size: 18px
+			line-height: 20px
+			display: block
+			font-family: "NotoSerifBoldItalic", sans-serif
+			color: #010101
+		h3
+			font-size: 14px
+			line-height: 20px
+			display: block
+			font-family: "NotoSerifItalic", sans-serif
+			color: #010101
+		span
+			color: #878787
+			font-size: 14px
+			display: block
+			padding-top: 8px
+	.owl-nav
+		button
+			text-indent: -9999px
+			width: 40px
+			height: 40px
+			display: block
+			position: absolute
+			top: 0
+			background-image: url(../img/icons/4.png) !important
+			z-index: 2
+			top: -83px
+		.owl-prev
+			background-position: left top !important
+			right: 48px
+			&:hover
+				background-position: left bottom !important
+		.owl-next
+			background-position: right top !important
+			right: 0
+			&:hover
+				background-position: right bottom !important
+	.owl-nav.disabled
+		display: block !important
+	.owl-dots
+		display: none
+
+.p-subtitle
+	color: #010101
+	font-size: 30px
+	font-family: "NotoSerifBoldItalic", sans-serif
+
+.p-news
+	margin-bottom: 12px
+	&__all
+		position: absolute
+		right: 0
+		top: 48px
+		display: inline-block
+		padding-right: 32px
+		color: #acacac
+		font-family: "NotoSerifItalic", sans-serif
+		text-decoration: none
+		&::after
+			content: ''
+			position: absolute
+			right: 0
+			top: 50%
+			width: 21px
+			height: 9px
+			background-image: url(../img/icons/3.png)
+			background-repeat: no-repeat
+			background-position: left center
+			margin-top: -4.5px
+		&:hover
+			color: #e71e24
+			&::after
+				content: ''
+				background-position: right center
+	&__data
+		color: #919191
+		font-size: 14px
+		display: block
+		padding-bottom: 5px
+	&__title
+		font-size: 18px
+		color: #000
+		display: block
+		font-family: "NotoSerifBold", sans-seri
+		padding-bottom: 16px
+	&__description
+		font-size: 14px
+		line-height: 24px
+		color: #000
+		display: block
+		margin-bottom: 12px
+	&__img
+		width: 100%
+		height: auto
+
+.f-addr
+	&__phone
+		display: block
+		width: 100%
+		color: #fff
+		font-size: 30px
+		font-family: "OpenSansBoldItalic", sans-serif
+		text-decoration: none
+		margin-bottom: 10px
+	&__addr
+		font-size: 14px
+		color: #fff
+		display: block
+		margin-bottom: 16px
+	&__copy
+		font-size: 14px
+		color: #707070
+		line-height: 24px
+
+.f-nav
+	width: 50%
+	float: left
+	&__item
+		padding-bottom: 18px
+		&:last-child
+			padding-bottom: 0
+	&__link
+		color: #fff
+		font-size: 14px
+		text-decoration: none
+		&:hover
+			color: #e71e24
+			text-decoration: underline
+
+.f-mail
+	&__email
+		color: #fff
+		font-size: 14px
+		line-height: 24px
+		padding-bottom: 24px
+		display: block
+	&__develop
+		padding-left: 50%
+		width: 100%
+		background-image: url(../img/footer-develop.png)
+		background-repeat: no-repeat
+		background-position: left center
+		background-size: auto 100%
+		font-size: 14px
+		color: #707070
+		padding-top: 10px
+		padding-bottom: 10px
